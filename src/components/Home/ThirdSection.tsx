@@ -48,7 +48,7 @@ const ThirdSection = () => {
 
   return (
     <div ref={sectionRef}>
-      <div className="hidden lg:flex bg-slate-50 overflow-x-hidden">
+      <div className="hidden lg:flex bg-white dark:bg-black overflow-x-hidden">
         <div className="mt-36">
           <div className="ms-[500px]">
             <motion.h1
@@ -92,7 +92,7 @@ const ThirdSection = () => {
           </div>
         </div>
       </div>
-      <div className="flex flex-col lg:hidden bg-slate-50 overflow-x-hidden p-4">
+      <div className="flex flex-col lg:hidden bg-white  dark:bg-black overflow-x-hidden p-4">
         <div className="mt-20">
           <div>
             <motion.h1

@@ -13,22 +13,38 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-[#f9fafc] p-4 relative">
+    <nav className="bg-[white] dark:bg-black p-4 relative">
       <div className="container mx-auto flex justify-between items-center">
         <div className="">
-          <Image src={logoBlack} alt="logo" className="w-24 h-auto" />
+          <Image
+            src={logoBlack}
+            alt="logo"
+            className="w-24 h-auto dark:bg-white"
+          />
         </div>
         <div className="hidden md:flex space-x-6 md:items-center">
-          <a href="/" className="text-black no-underline hover:font-bold">
+          <a
+            href="/"
+            className="text-black dark:text-white no-underline hover:font-bold"
+          >
             Home
           </a>
-          <a href="#" className="text-black no-underline hover:font-bold">
+          <a
+            href="#"
+            className="text-black dark:text-white no-underline hover:font-bold"
+          >
             About
           </a>
-          <a href="#" className="text-black no-underline hover:font-bold">
+          <a
+            href="#"
+            className="text-black dark:text-white no-underline hover:font-bold"
+          >
             Services
           </a>
-          <a href="#" className="text-black no-underline hover:font-bold">
+          <a
+            href="#"
+            className="text-black dark:text-white no-underline hover:font-bold"
+          >
             Contact
           </a>
           <Link href="/common">

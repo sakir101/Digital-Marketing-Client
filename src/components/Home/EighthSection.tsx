@@ -61,7 +61,7 @@ const EighthSection = () => {
 
   return (
     <div
-      className="bg-slate-50  overflow-x-hidden px-7 lg:px-0"
+      className="bg-white dark:bg-black overflow-x-hidden px-7 lg:px-0"
       ref={sectionRef}
     >
       <div className="flex flex-col lg:justify-center lg:items-center mt-12 lg:mt-28">
@@ -106,22 +106,22 @@ const EighthSection = () => {
                 className="w-56 h-auto transition-transform duration-300 transform group-hover:scale-x-[-1]"
               />
             </div>
-            <div className="bg-slate-50 z-50 p-7">
+            <div className="bg-white dark:bg-slate-950 z-50 p-7">
               <a
-                className="text-[#6a6a6a] text-xs font-medium no-underline"
+                className="text-[#6a6a6a] dark:text-white text-xs font-medium no-underline"
                 href="#"
               >
                 UI Design, 02 May 2019
               </a>
               <br />
-              <p className="text-black font-bold no-underline text-lg mt-3 mb-7 cursor-pointer">
+              <p className="text-black dark:text-white font-bold no-underline text-lg mt-3 mb-7 cursor-pointer">
                 How to bring fold to your <br /> startup company with Axtra
               </p>
               <hr />
               <div className="flex items-center">
                 <a
                   href="#"
-                  className="text-[#6a6a6a] text-xs font-medium no-underline"
+                  className="text-[#6a6a6a] dark:text-white text-xs font-medium no-underline"
                 >
                   Read More
                 </a>
@@ -137,15 +137,15 @@ const EighthSection = () => {
                 className="w-56 h-auto transition-transform duration-300 transform group-hover:scale-x-[-1]"
               />
             </div>
-            <div className="p-7 ms-0 lg:ms-48 z-20 bg-slate-50">
+            <div className="p-7 ms-0 lg:ms-48 z-20 bg-slate-50 dark:bg-slate-950">
               <a
-                className="text-[#6a6a6a] text-xs font-medium no-underline"
+                className="text-[#6a6a6a] dark:text-white text-xs font-medium no-underline"
                 href="#"
               >
                 UI Design, 02 May 2019
               </a>
               <br />
-              <p className="text-black font-bold no-underline text-lg mt-3 mb-7 cursor-pointer">
+              <p className="text-black dark:text-white font-bold no-underline text-lg mt-3 mb-7 cursor-pointer">
                 How to manage a talented <br /> and successful design <br />{" "}
                 team
               </p>
@@ -153,7 +153,7 @@ const EighthSection = () => {
               <div className="flex items-center">
                 <a
                   href="#"
-                  className="text-[#6a6a6a] text-xs font-medium no-underline"
+                  className="text-[#6a6a6a] dark:text-white text-xs font-medium no-underline"
                 >
                   Read More
                 </a>

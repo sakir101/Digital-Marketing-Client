@@ -32,12 +32,7 @@ const FifthSection = () => {
 
   return (
     <div
-      className="bg-slate-50 overflow-x-hidden relative"
-      style={{
-        backgroundImage: `url(${bg5.src})`,
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
+      className="bg-white dark:bg-black overflow-x-hidden relative"
       onMouseMove={handleMouseMove}
     >
       <motion.div

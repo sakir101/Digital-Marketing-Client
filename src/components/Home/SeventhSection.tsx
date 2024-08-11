@@ -74,7 +74,7 @@ const SeventhSection = () => {
 
   return (
     <div
-      className="bg-[#f2ecec] py-24 px-5 flex flex-col lg:flex-row justify-center items-top"
+      className="bg-[#f2ecec] dark:bg-black py-24 px-5 flex flex-col lg:flex-row justify-center items-top"
       ref={sectionRef}
     >
       <div className="me-10">
@@ -103,7 +103,7 @@ const SeventhSection = () => {
       </div>
       <div>
         {/* Pricing cards */}
-        <div className="bg-black py-8 w-full lg:w-[500px] rounded-lg mb-3">
+        <div className="bg-black dark:bg-slate-900 py-8 w-full lg:w-[500px] rounded-lg mb-3">
           <div className="flex justify-between ms-20 me-7">
             <div className="p-3 border-[1px] border-solid border-white rounded-2xl">
               <p className="text-white text-xs font-light">YEARLY</p>
@@ -166,7 +166,7 @@ const SeventhSection = () => {
           onMouseLeave={() => setHovered(false)}
         >
           <motion.div
-            className="w-32 h-32 border-[1px] border-solid border-black rounded-full mx-2 flex items-center justify-center"
+            className="w-40 h-40 border-[1px] border-solid border-black rounded-full mx-2 flex items-center justify-center dark:border-white"
             style={{
               backgroundColor: hovered
                 ? `rgba(0, 0, 0, ${hoverPosition.x / 176})`
@@ -181,7 +181,7 @@ const SeventhSection = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             <motion.a
-              className=" no-underline"
+              className="no-underline dark:text-white"
               href="#"
               style={{ color: hovered ? "white" : "black" }}
               transition={{ duration: 0.3, ease: "easeInOut" }}

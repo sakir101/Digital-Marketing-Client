@@ -80,7 +80,7 @@ const FirstSection = () => {
   }, [controls]);
 
   return (
-    <div className="flex flex-col bg-slate-50 overflow-x-hidden">
+    <div className="flex flex-col bg-white dark:bg-black overflow-x-hidden">
       <div
         className="my-10 ms-3 lg:ms-32 me-24"
         style={{

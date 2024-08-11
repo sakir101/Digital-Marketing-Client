@@ -172,7 +172,7 @@ const SubThirdSection = () => {
   }, [scrollY, controls]);
 
   return (
-    <div className="flex flex-col bg-slate-50 overflow-x-hidden p-5 lg:p-0">
+    <div className="flex flex-col bg-white dark:bg-black overflow-x-hidden p-5 lg:p-0">
       <div
         className="grid grid-cols-1 lg:grid-cols-3 justify-center lg:gap-0 my-10 lg:mx-64 lg:my-20"
         ref={sectionRef}
@@ -180,7 +180,7 @@ const SubThirdSection = () => {
         <div className="lg:w-[1000px] mb-5 lg:mb-0">
           <motion.a
             href="#"
-            className="text-2xl lg:text-3xl no-underline text-black font-semibold"
+            className="text-2xl lg:text-3xl no-underline text-black font-semibold dark:text-white "
             initial="hidden"
             animate={controls1}
             variants={slideInLeft}
@@ -233,7 +233,7 @@ const SubThirdSection = () => {
           onMouseLeave={() => setHovered(false)}
         >
           <motion.div
-            className="w-40 h-40 border-[1px] border-solid border-black rounded-full mx-2 flex items-center justify-center"
+            className="w-40 h-40 border-[1px] border-solid border-black rounded-full mx-2 flex items-center justify-center dark:border-white"
             style={{
               backgroundColor: hovered
                 ? `rgba(0, 0, 0, ${hoverPosition.x / 176})`
@@ -248,9 +248,9 @@ const SubThirdSection = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             <motion.a
-              className=" no-underline"
+              className="no-underline dark:text-white"
               href="#"
-              style={{ color: hovered ? "white" : "black" }}
+              style={{ color: hovered1 ? "white" : "black" }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
             >
               Detail
@@ -274,7 +274,7 @@ const SubThirdSection = () => {
         <div className="lg:w-[1000px] mb-5 lg:mb-0">
           <motion.a
             href="#"
-            className="text-2xl lg:text-3xl no-underline text-black font-semibold"
+            className="text-2xl lg:text-3xl no-underline text-black font-semibold dark:text-white "
             initial="hidden"
             animate={controls2}
             variants={slideInLeft}
@@ -327,7 +327,7 @@ const SubThirdSection = () => {
           onMouseLeave={() => setHovered1(false)}
         >
           <motion.div
-            className="w-40 h-40 border-[1px] border-solid border-black rounded-full mx-2 flex items-center justify-center"
+            className="w-40 h-40 border-[1px] border-solid border-black rounded-full mx-2 flex items-center justify-center dark:border-white"
             style={{
               backgroundColor: hovered1
                 ? `rgba(0, 0, 0, ${hoverPosition.x / 176})`
@@ -342,7 +342,7 @@ const SubThirdSection = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             <motion.a
-              className="no-underline"
+              className="no-underline dark:text-white"
               href="#"
               style={{ color: hovered1 ? "white" : "black" }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -368,7 +368,7 @@ const SubThirdSection = () => {
         <div className="lg:w-[1000px] mb-5 lg:mb-0">
           <motion.a
             href="#"
-            className="text-2xl lg:text-3xl no-underline text-black font-semibold"
+            className="text-2xl lg:text-3xl no-underline text-black font-semibold dark:text-white "
             initial="hidden"
             animate={controls3}
             variants={slideInLeft}
@@ -421,7 +421,7 @@ const SubThirdSection = () => {
           onMouseLeave={() => setHovered2(false)}
         >
           <motion.div
-            className="w-40 h-40 border-[1px] border-solid border-black rounded-full mx-2 flex items-center justify-center"
+            className="w-40 h-40 border-[1px] border-solid border-black rounded-full mx-2 flex items-center justify-center dark:border-white"
             style={{
               backgroundColor: hovered2
                 ? `rgba(0, 0, 0, ${hoverPosition.x / 176})`
@@ -436,7 +436,7 @@ const SubThirdSection = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             <motion.a
-              className="no-underline"
+              className="no-underline dark:text-white"
               href="#"
               style={{ color: hovered2 ? "white" : "black" }}
               transition={{ duration: 0.3, ease: "easeInOut" }}
@@ -462,7 +462,7 @@ const SubThirdSection = () => {
         <div className="lg:w-[1000px] mb-5 lg:mb-0">
           <motion.a
             href="#"
-            className="text-2xl lg:text-3xl no-underline text-black font-semibold"
+            className="text-2xl lg:text-3xl no-underline text-black font-semibold dark:text-white "
             initial="hidden"
             animate={controls4}
             variants={slideInLeft}
@@ -515,7 +515,7 @@ const SubThirdSection = () => {
           onMouseLeave={() => setHovered3(false)}
         >
           <motion.div
-            className="w-40 h-40 border-[1px] border-solid border-black rounded-full mx-2 flex items-center justify-center"
+            className="w-40 h-40 border-[1px] border-solid border-black rounded-full mx-2 flex items-center justify-center dark:border-white"
             style={{
               backgroundColor: hovered3
                 ? `rgba(0, 0, 0, ${hoverPosition.x / 176})`
@@ -530,7 +530,7 @@ const SubThirdSection = () => {
             transition={{ duration: 0.3, ease: "easeInOut" }}
           >
             <motion.a
-              className="no-underline"
+              className="no-underline dark:text-white"
               href="#"
               style={{ color: hovered3 ? "white" : "black" }}
               transition={{ duration: 0.3, ease: "easeInOut" }}

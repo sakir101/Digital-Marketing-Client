@@ -42,7 +42,13 @@ const Carousel1 = () => {
     <div className="flex flex-col items-center text-center p-8">
       {/* Quotation Mark Image */}
       <div className="mb-4">
-        <Image src={quote} alt="Quote Icon" width={40} height={40} />
+        <Image
+          src={quote}
+          alt="Quote Icon"
+          width={40}
+          height={40}
+          className="dark:bg-white"
+        />
       </div>
 
       {/* Testimonial Text */}

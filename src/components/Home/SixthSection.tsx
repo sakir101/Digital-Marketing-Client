@@ -75,7 +75,7 @@ const ScrollCarouselComponent = () => {
 
   return (
     <div>
-      <div className="h-screen w-screen block lg:hidden bg-[#f2ecec]"></div>
+      <div className="h-screen w-screen block lg:hidden bg-white dark:bg-black"></div>
       <div
         className="hidden lg:block"
         style={{ position: "relative", overflow: "hidden", display: "flex" }}
@@ -83,13 +83,13 @@ const ScrollCarouselComponent = () => {
       >
         <ScrollCarousel speed={7} onReady={() => console.log("I am ready")}>
           <div
-            className="w-screen h-screen bg-[#fefaef] text-center flex justify-center items-center"
+            className="w-screen h-screen bg-[#fefaef] dark:bg-black text-center flex justify-center items-center"
             style={{
               scrollSnapAlign: "start",
             }}
           >
             <motion.h2
-              className="text-black text-6xl lg:text-[100px]"
+              className="text-black dark:text-white text-6xl lg:text-[100px]"
               initial="hidden"
               animate={controls}
               variants={brandFlyIn}
@@ -98,7 +98,7 @@ const ScrollCarouselComponent = () => {
             </motion.h2>
           </div>
           <div
-            className="w-screen h-screen bg-[#f2ecec] py-7 hidden lg:block"
+            className="w-screen h-screen bg-white dark:bg-black py-7 hidden lg:block"
             style={{
               backgroundImage: `url(${bg6.src})`,
               backgroundPosition: "left bottom",
@@ -127,13 +127,13 @@ const ScrollCarouselComponent = () => {
                   </p>
                 </div>
                 <div className="flex items-center ms-20">
-                  <button className="bg-transparent border-[1px] border-solid border-black rounded-full p-2 hover:bg-black hover:text-white cursor-pointer">
+                  <button className="bg-transparent dark:bg-white border-[1px] border-solid border-black rounded-full p-2 hover:bg-black hover:text-white cursor-pointer">
                     GOOGLE
                   </button>
-                  <button className="bg-transparent border-[1px] border-solid border-black rounded-full p-2 hover:bg-black hover:text-white cursor-pointer">
+                  <button className="bg-transparent dark:bg-white border-[1px] border-solid border-black rounded-full p-2 hover:bg-black hover:text-white cursor-pointer">
                     PINTEREST
                   </button>
-                  <button className="bg-transparent border-[1px] border-solid border-black rounded-full p-2 hover:bg-black hover:text-white cursor-pointer">
+                  <button className="bg-transparent dark:bg-white border-[1px] border-solid border-black rounded-full p-2 hover:bg-black hover:text-white dark:hover:text-yellow-300 cursor-pointer">
                     INSTAGRAM
                   </button>
                 </div>
@@ -146,9 +146,9 @@ const ScrollCarouselComponent = () => {
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
                   >
-                    <motion.div className="w-40 h-40 border-[2px] border-solid border-black rounded-full flex items-center justify-center bg-transparent">
+                    <motion.div className="w-40 h-40 border-[2px] border-solid border-black dark:border-white rounded-full flex items-center justify-center bg-transparent">
                       <a
-                        className=" no-underline font-bold text-3xl text-black"
+                        className=" no-underline font-bold text-3xl text-black dark:text-white"
                         href="#"
                       >
                         60%
@@ -171,9 +171,9 @@ const ScrollCarouselComponent = () => {
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
                   >
-                    <motion.div className="w-40 h-40 border-[2px] border-solid border-black rounded-full flex items-center justify-center bg-transparent">
+                    <motion.div className="w-40 h-40 border-[2px] border-solid border-black dark:border-white rounded-full flex items-center justify-center bg-transparent">
                       <a
-                        className=" no-underline font-bold text-3xl text-black"
+                        className=" no-underline font-bold text-3xl text-black dark:text-white"
                         href="#"
                       >
                         95%
@@ -196,9 +196,9 @@ const ScrollCarouselComponent = () => {
                     onMouseEnter={() => setHovered(true)}
                     onMouseLeave={() => setHovered(false)}
                   >
-                    <motion.div className="w-40 h-40 border-[2px] border-solid border-black rounded-full flex items-center justify-center bg-transparent">
+                    <motion.div className="w-40 h-40 border-[2px] border-solid border-black dark:border-white rounded-full flex items-center justify-center bg-transparent">
                       <a
-                        className=" no-underline font-bold text-3xl text-black"
+                        className=" no-underline font-bold text-3xl text-black dark:text-white"
                         href="#"
                       >
                         70%
@@ -219,7 +219,7 @@ const ScrollCarouselComponent = () => {
           </div>
 
           <div
-            className="w-screen h-screen bg-[#fefaef] text-center hidden lg:flex justify-center items-center"
+            className="w-screen h-screen bg-[#fefaef] dark:bg-black text-center hidden lg:flex justify-center items-center"
             style={{
               scrollSnapAlign: "start",
             }}
@@ -259,7 +259,7 @@ const ScrollCarouselComponent = () => {
             </div>
           </div>
           <div
-            className="w-screen h-screen bg-[#dfe3cc] text-center hidden lg:flex justify-center items-center"
+            className="w-screen h-screen bg-[#dfe3cc] dark:bg-black text-center hidden lg:flex justify-center items-center"
             style={{
               scrollSnapAlign: "start",
             }}
@@ -277,24 +277,21 @@ const ScrollCarouselComponent = () => {
                 onMouseLeave={() => setHovered(false)}
               >
                 <motion.div
-                  className="w-56 h-56 border-[1px] border-solid border-black rounded-full mx-2 flex items-center justify-center"
+                  className={`w-40 h-40 border-[1px] border-solid rounded-full mx-2 flex items-center justify-center ${
+                    hovered ? "scale-110 overflow-hidden" : "scale-100"
+                  } border-black dark:border-white`}
                   style={{
                     backgroundColor: hovered
                       ? `rgba(0, 0, 0, ${hoverPosition.x / 176})`
                       : "transparent",
-                    // Added transform to handle scaling and avoid overflow issues
-                    transform: hovered ? "scale(1.1)" : "scale(1)",
-                    // Ensure any overflow is handled
-                    overflow: "hidden",
                   }}
                   animate={controlsFlipFlop}
                   variants={flipFlopAnimation}
                   transition={{ duration: 0.3, ease: "easeInOut" }}
                 >
                   <motion.a
-                    className=" no-underline"
+                    className="no-underline text-black dark:text-white"
                     href="#"
-                    style={{ color: hovered ? "white" : "black" }}
                     transition={{ duration: 0.3, ease: "easeInOut" }}
                   >
                     Contact <br />
