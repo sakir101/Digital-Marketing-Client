@@ -1,5 +1,5 @@
 {
-  "name": "marketing-client",
+  "name": "mt-directory",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -13,10 +13,8 @@
     "@ant-design/nextjs-registry": "^1.0.0",
     "@hookform/resolvers": "^3.3.4",
     "@reduxjs/toolkit": "^2.0.1",
-    "antd": "^5.12.6",
+    "antd": "^5.7.3",
     "axios": "^1.6.3",
-    "framer-motion": "^11.3.24",
-    "gsap": "^3.12.5",
     "json-server": "^0.17.4",
     "jsonwebtoken": "^8.5.1",
     "jwt-decode": "^4.0.0",
@@ -42,7 +40,6 @@
     "daisyui": "^4.5.0",
     "eslint": "^8",
     "eslint-config-next": "14.0.4",
-    "file-loader": "^6.2.0",
     "postcss": "^8.4.33",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"

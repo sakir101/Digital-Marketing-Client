@@ -22,12 +22,13 @@ const LoginPage = () => {
 
   const onSubmit: SubmitHandler<FormValues> = async (data: any) => {
     const key = "loadingKey";
-
     try {
       const res = await userLogin({ ...data }).unwrap();
       if (res?.accessToken) {
         storeUserInfo({ accessToken: res?.accessToken });
-        router.push(`/user/profile/account-profile`);
+        const { role, userId: id } = getUserInfo() as any;
+        localStorage.setItem("Role", role as string);
+        router.push(`/${role}/profile/account-profile`);
         toast.success("User login successful");
       }
     } catch (err: any) {

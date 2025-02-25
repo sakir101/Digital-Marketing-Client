@@ -1,5 +1,5 @@
 import Common from "@/components/Common/Common";
-import Navbar from "@/components/Home/Navbar";
+import Navbar from "@/components/Navbar/Navbar";
 
 const page = () => {
   return (
